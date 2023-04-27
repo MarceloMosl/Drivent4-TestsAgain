@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1682549014633" clover="3.2.0">
+  <project timestamp="1682549014633" name="All files">
+    <metrics statements="512" coveredstatements="294" conditionals="73" coveredconditionals="6" methods="86" coveredmethods="31" elements="671" coveredelements="331" complexity="0" loc="512" ncloc="512" packages="24" files="60" classes="60"/>
+    <package name="src">
+      <metrics statements="22" coveredstatements="16" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="2"/>
+      <file name="app.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/app.ts">
+        <metrics statements="17" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
+        <line num="21" count="10" type="stmt"/>
+        <line num="22" count="10" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="35" count="10" type="stmt"/>
+        <line num="36" count="10" type="stmt"/>
+        <line num="37" count="10" type="stmt"/>
+        <line num="40" count="10" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="10" type="stmt"/>
+      </file>
+      <file name="server.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/server.ts">
+        <metrics statements="5" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.config">
+      <metrics statements="13" coveredstatements="12" conditionals="4" coveredconditionals="1" methods="3" coveredmethods="2"/>
+      <file name="database.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/config/database.ts">
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="envs.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/config/envs.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="6" count="23" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="23" type="stmt"/>
+        <line num="13" count="23" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/config/index.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.controllers">
+      <metrics statements="110" coveredstatements="49" conditionals="10" coveredconditionals="0" methods="13" coveredmethods="4"/>
+      <file name="authentication-controller.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/controllers/authentication-controller.ts">
+        <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="enrollments-controller.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/controllers/enrollments-controller.ts">
+        <metrics statements="20" coveredstatements="9" conditionals="1" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="39" count="0" type="stmt"/>
+      </file>
+      <file name="events-controller.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/controllers/events-controller.ts">
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="hotel-controller.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/controllers/hotel-controller.ts">
+        <metrics statements="15" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/controllers/index.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+      </file>
+      <file name="payments-controller.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/controllers/payments-controller.ts">
+        <metrics statements="24" coveredstatements="4" conditionals="8" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+      </file>
+      <file name="tickets-controller.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/controllers/tickets-controller.ts">
+        <metrics statements="20" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="10" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="10" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+      </file>
+      <file name="users-controller.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/controllers/users-controller.ts">
+        <metrics statements="10" coveredstatements="8" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="15" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.errors">
+      <metrics statements="23" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="2"/>
+      <file name="cannot-enroll-before-start-date-error.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/errors/cannot-enroll-before-start-date-error.ts">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="cannot-list-hotels-error.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/errors/cannot-list-hotels-error.ts">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="conflict-error.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/errors/conflict-error.ts">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/errors/index.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+      </file>
+      <file name="invalid-data-error.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/errors/invalid-data-error.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+      </file>
+      <file name="invalid-email-error.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/errors/invalid-email-error.ts">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="not-found-error.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/errors/not-found-error.ts">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="request-error.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/errors/request-error.ts">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="unauthorized-error.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/errors/unauthorized-error.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="18" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.middlewares">
+      <metrics statements="47" coveredstatements="28" conditionals="13" coveredconditionals="3" methods="8" coveredmethods="6"/>
+      <file name="authentication-middleware.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/middlewares/authentication-middleware.ts">
+        <metrics statements="17" coveredstatements="13" conditionals="3" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="9" count="18" type="stmt"/>
+        <line num="10" count="18" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="13" count="9" type="cond" truecount="0" falsecount="1"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="9" type="stmt"/>
+        <line num="34" count="18" type="stmt"/>
+      </file>
+      <file name="error-handling-middleware.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/middlewares/error-handling-middleware.ts">
+        <metrics statements="16" coveredstatements="2" conditionals="8" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="29" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="35" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="41" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/middlewares/index.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+      </file>
+      <file name="validation-middleware.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/middlewares/validation-middleware.ts">
+        <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="40" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="15" count="40" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
+        <line num="20" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.repositories.address-repository">
+      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/repositories/address-repository/index.ts">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="24" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.repositories.enrollment-repository">
+      <metrics statements="6" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/repositories/enrollment-repository/index.ts">
+        <metrics statements="6" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="36" count="10" type="stmt"/>
+        <line num="42" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.repositories.event-repository">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/repositories/event-repository/index.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.repositories.hotel-repository">
+      <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/repositories/hotel-repository/index.ts">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.repositories.payments-repository">
+      <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/repositories/payments-repository/index.ts">
+        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="21" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.repositories.session-repository">
+      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/repositories/session-repository/index.ts">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.repositories.tickets-repository">
+      <metrics statements="9" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/repositories/tickets-repository/index.ts">
+        <metrics statements="9" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="61" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.repositories.user-repository">
+      <metrics statements="8" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/repositories/user-repository/index.ts">
+        <metrics statements="8" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="11" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="24" count="10" type="stmt"/>
+        <line num="29" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.routers">
+      <metrics statements="58" coveredstatements="52" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="authentication-router.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/routers/authentication-router.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+      </file>
+      <file name="bookings-router.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/routers/bookings-router.ts">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="enrollments-router.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/routers/enrollments-router.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+      </file>
+      <file name="events-router.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/routers/events-router.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+      </file>
+      <file name="hotels-router.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/routers/hotels-router.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/routers/index.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+      </file>
+      <file name="payments-router.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/routers/payments-router.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+      </file>
+      <file name="tickets-router.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/routers/tickets-router.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+      </file>
+      <file name="users-router.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/routers/users-router.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.schemas">
+      <metrics statements="28" coveredstatements="26" conditionals="6" coveredconditionals="1" methods="4" coveredmethods="4"/>
+      <file name="authentication-schemas.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/schemas/authentication-schemas.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+      </file>
+      <file name="enrollments-schemas.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/schemas/enrollments-schemas.ts">
+        <metrics statements="19" coveredstatements="17" conditionals="6" coveredconditionals="1" methods="4" coveredmethods="4"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="9" count="13" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="23" count="351" type="stmt"/>
+        <line num="31" count="26" type="cond" truecount="0" falsecount="1"/>
+        <line num="33" count="26" type="cond" truecount="1" falsecount="0"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="37" count="25" type="stmt"/>
+        <line num="41" count="16" type="cond" truecount="0" falsecount="1"/>
+        <line num="43" count="16" type="cond" truecount="0" falsecount="1"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="47" count="16" type="stmt"/>
+        <line num="51" count="20" type="cond" truecount="0" falsecount="1"/>
+        <line num="53" count="20" type="cond" truecount="0" falsecount="1"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="57" count="20" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/schemas/index.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+      </file>
+      <file name="tickets-schemas.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/schemas/tickets-schemas.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+      </file>
+      <file name="users-schemas.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/schemas/users-schemas.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/services/index.ts">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services.authentication-service">
+      <metrics statements="24" coveredstatements="14" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="3"/>
+      <file name="errors.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/services/authentication-service/errors.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/services/authentication-service/index.ts">
+        <metrics statements="22" coveredstatements="12" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="55" count="10" type="stmt"/>
+        <line num="59" count="10" type="stmt"/>
+        <line num="60" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services.enrollments-service">
+      <metrics statements="28" coveredstatements="8" conditionals="9" coveredconditionals="0" methods="5" coveredmethods="1"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/services/enrollments-service/index.ts">
+        <metrics statements="28" coveredstatements="8" conditionals="9" coveredconditionals="0" methods="5" coveredmethods="1"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="46" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="79" count="10" type="stmt"/>
+        <line num="85" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services.events-service">
+      <metrics statements="15" coveredstatements="8" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/services/events-service/index.ts">
+        <metrics statements="15" coveredstatements="8" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="27" count="10" type="stmt"/>
+        <line num="32" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services.hotels-service">
+      <metrics statements="22" coveredstatements="6" conditionals="12" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/services/hotels-service/index.ts">
+        <metrics statements="22" coveredstatements="6" conditionals="12" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="5"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services.payments-service">
+      <metrics statements="20" coveredstatements="5" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/services/payments-service/index.ts">
+        <metrics statements="20" coveredstatements="5" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="45" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services.tickets-service">
+      <metrics statements="20" coveredstatements="6" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/services/tickets-service/index.ts">
+        <metrics statements="20" coveredstatements="6" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="10" type="stmt"/>
+        <line num="43" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services.users-service">
+      <metrics statements="21" coveredstatements="12" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <file name="errors.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/services/users-service/errors.ts">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/services/users-service/index.ts">
+        <metrics statements="19" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="29" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="36" count="10" type="stmt"/>
+        <line num="40" count="10" type="stmt"/>
+        <line num="41" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="13" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="prisma-utils.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/utils/prisma-utils.ts">
+        <metrics statements="5" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="request.ts" path="/home/marcelo/Documentos/Marcelo/Driven/Projetos/modulo_5/drivent4-TestAgain/src/utils/request.ts">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">95.83% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/24</span>
+                <span class='fraction'>23/24</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">30% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/20</span>
+                <span class='fraction'>20/20</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -113,37 +113,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
@@ -155,38 +155,38 @@ import enrollmentRepository from '@/repositories/enrollment-repository';
 import ticketsRepository from '@/repositories/tickets-repository';
 import { CreateTicketParams } from '@/protocols';
 &nbsp;
-async function <span class="fstat-no" title="function not covered" >getTicketType(</span>): Promise&lt;TicketType[]&gt; {
-  const ticketTypes: TicketType[] = <span class="cstat-no" title="statement not covered" >await ticketsRepository.findTicketTypes();</span>
-<span class="cstat-no" title="statement not covered" >  <span class="missing-if-branch" title="if path not taken" >I</span>if (!ticketTypes) <span class="cstat-no" title="statement not covered" >throw notFoundError();</span></span>
+async function getTicketType(): Promise&lt;TicketType[]&gt; {
+  const ticketTypes: TicketType[] = await ticketsRepository.findTicketTypes();
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (!ticketTypes) <span class="cstat-no" title="statement not covered" >throw notFoundError();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return ticketTypes;</span>
+  return ticketTypes;
 }
 &nbsp;
-async function <span class="fstat-no" title="function not covered" >getTicketByUserId(</span>userId: number): Promise&lt;Ticket&gt; {
-  const enrollment = <span class="cstat-no" title="statement not covered" >await enrollmentRepository.findWithAddressByUserId(userId);</span>
-<span class="cstat-no" title="statement not covered" >  <span class="missing-if-branch" title="if path not taken" >I</span>if (!enrollment) <span class="cstat-no" title="statement not covered" >throw notFoundError();</span></span>
+async function getTicketByUserId(userId: number): Promise&lt;Ticket&gt; {
+  const enrollment = await enrollmentRepository.findWithAddressByUserId(userId);
+  if (!enrollment) throw notFoundError();
 &nbsp;
-  const ticket = <span class="cstat-no" title="statement not covered" >await ticketsRepository.findTicketByEnrollmentId(enrollment.id);</span>
-<span class="cstat-no" title="statement not covered" >  <span class="missing-if-branch" title="if path not taken" >I</span>if (!ticket) <span class="cstat-no" title="statement not covered" >throw notFoundError();</span></span>
+  const ticket = await ticketsRepository.findTicketByEnrollmentId(enrollment.id);
+  if (!ticket) throw notFoundError();
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return ticket;</span>
+  return ticket;
 }
 &nbsp;
-async function <span class="fstat-no" title="function not covered" >createTicket(</span>userId: number, ticketTypeId: number): Promise&lt;Ticket&gt; {
-  const enrollment = <span class="cstat-no" title="statement not covered" >await enrollmentRepository.findWithAddressByUserId(userId);</span>
-<span class="cstat-no" title="statement not covered" >  <span class="missing-if-branch" title="if path not taken" >I</span>if (!enrollment) <span class="cstat-no" title="statement not covered" >throw notFoundError();</span></span>
+async function createTicket(userId: number, ticketTypeId: number): Promise&lt;Ticket&gt; {
+  const enrollment = await enrollmentRepository.findWithAddressByUserId(userId);
+  if (!enrollment) throw notFoundError();
 &nbsp;
-  const ticketData: CreateTicketParams = <span class="cstat-no" title="statement not covered" >{</span>
+  const ticketData: CreateTicketParams = {
     ticketTypeId,
     enrollmentId: enrollment.id,
     status: TicketStatus.RESERVED,
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  await ticketsRepository.createTicket(ticketData);</span>
+  await ticketsRepository.createTicket(ticketData);
 &nbsp;
-  const ticket = <span class="cstat-no" title="statement not covered" >await ticketsRepository.findTicketByEnrollmentId(enrollment.id);</span>
+  const ticket = await ticketsRepository.findTicketByEnrollmentId(enrollment.id);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return ticket;</span>
+  return ticket;
 }
 &nbsp;
 const ticketService = { getTicketType, getTicketByUserId, createTicket };
@@ -199,7 +199,7 @@ export default ticketService;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Wed Apr 26 2023 19:43:34 GMT-0300 (Horário Padrão de Brasília)
+                at Fri Apr 28 2023 19:45:33 GMT-0300 (Horário Padrão de Brasília)
             </div>
         <script src="../../../prettify.js"></script>
         <script>

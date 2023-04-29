@@ -4,7 +4,7 @@ import { notFoundError } from '@/errors';
 export async function getUserBooking(userId: number) {
   const promise = await bookingRepo.getUserBooking(userId);
 
-  if (promise.length === 0) throw notFoundError();
+  if (!promise) throw notFoundError();
 
   return promise;
 }

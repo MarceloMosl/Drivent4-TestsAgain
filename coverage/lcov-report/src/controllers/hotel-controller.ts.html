@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">26.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">26.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -97,26 +97,26 @@
 <span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import httpStatus from 'http-status';
@@ -124,27 +124,27 @@ import { NextFunction, Response } from 'express';
 import { AuthenticatedRequest } from '@/middlewares';
 import hotelsService from '@/services/hotels-service';
 &nbsp;
-export async function <span class="fstat-no" title="function not covered" >getHotels(</span>req: AuthenticatedRequest, res: Response, next: NextFunction) {
-  const { userId } = <span class="cstat-no" title="statement not covered" >req;</span>
+export async function getHotels(req: AuthenticatedRequest, res: Response, next: NextFunction) {
+  const { userId } = req;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  try {</span>
-    const hotels = <span class="cstat-no" title="statement not covered" >await hotelsService.getHotels(userId);</span>
-<span class="cstat-no" title="statement not covered" >    return res.status(httpStatus.OK).send(hotels);</span>
+  try {
+    const hotels = await hotelsService.getHotels(userId);
+    return res.status(httpStatus.OK).send(hotels);
   } catch (error) {
-<span class="cstat-no" title="statement not covered" >    next(error);</span>
+    next(error);
   }
 }
 &nbsp;
-export async function <span class="fstat-no" title="function not covered" >getHotelsWithRooms(</span>req: AuthenticatedRequest, res: Response, next: NextFunction) {
-  const { userId } = <span class="cstat-no" title="statement not covered" >req;</span>
-  const { hotelId } = <span class="cstat-no" title="statement not covered" >req.params;</span>
+export async function getHotelsWithRooms(req: AuthenticatedRequest, res: Response, next: NextFunction) {
+  const { userId } = req;
+  const { hotelId } = req.params;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  try {</span>
-    const hotels = <span class="cstat-no" title="statement not covered" >await hotelsService.getHotelsWithRooms(userId, Number(hotelId));</span>
+  try {
+    const hotels = await hotelsService.getHotelsWithRooms(userId, Number(hotelId));
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return res.status(httpStatus.OK).send(hotels);</span>
+    return res.status(httpStatus.OK).send(hotels);
   } catch (error) {
-<span class="cstat-no" title="statement not covered" >    next(error);</span>
+    next(error);
   }
 }
 &nbsp;</pre></td></tr></table></pre>
@@ -154,7 +154,7 @@ export async function <span class="fstat-no" title="function not covered" >getHo
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Wed Apr 26 2023 19:43:34 GMT-0300 (Horário Padrão de Brasília)
+                at Fri Apr 28 2023 19:45:33 GMT-0300 (Horário Padrão de Brasília)
             </div>
         <script src="../../prettify.js"></script>
         <script>

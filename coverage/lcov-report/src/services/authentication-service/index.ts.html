@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/24</span>
+                <span class='fraction'>24/24</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">54.54% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/22</span>
+                <span class='fraction'>22/22</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -132,40 +132,40 @@
 <span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -196,11 +196,11 @@ async function signIn(params: SignInParams): Promise&lt;SignInResult&gt; {
 &nbsp;
   const user = await getUserOrFail(email);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  await validatePasswordOrFail(password, user.password);</span>
+  await validatePasswordOrFail(password, user.password);
 &nbsp;
-  const token = <span class="cstat-no" title="statement not covered" >await createSession(user.id);</span>
+  const token = await createSession(user.id);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return {</span>
+  return {
     user: exclude(user, 'password'),
     token,
   };
@@ -208,24 +208,24 @@ async function signIn(params: SignInParams): Promise&lt;SignInResult&gt; {
 &nbsp;
 async function getUserOrFail(email: string): Promise&lt;GetUserOrFailResult&gt; {
   const user = await userRepository.findByEmail(email, { id: true, email: true, password: true });
-<span class="cstat-no" title="statement not covered" >  <span class="missing-if-branch" title="if path not taken" >I</span>if (!user) <span class="cstat-no" title="statement not covered" >throw invalidCredentialsError();</span></span>
+  if (!user) throw invalidCredentialsError();
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return user;</span>
+  return user;
 }
 &nbsp;
-async function <span class="fstat-no" title="function not covered" >createSession(</span>userId: number) {
-  const token = <span class="cstat-no" title="statement not covered" >jwt.sign({ userId }, process.env.JWT_SECRET);</span>
-<span class="cstat-no" title="statement not covered" >  await sessionRepository.create({</span>
+async function createSession(userId: number) {
+  const token = jwt.sign({ userId }, process.env.JWT_SECRET);
+  await sessionRepository.create({
     token,
     userId,
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return token;</span>
+  return token;
 }
 &nbsp;
-async function <span class="fstat-no" title="function not covered" >validatePasswordOrFail(</span>password: string, userPassword: string) {
-  const isPasswordValid = <span class="cstat-no" title="statement not covered" >await bcrypt.compare(password, userPassword);</span>
-<span class="cstat-no" title="statement not covered" >  <span class="missing-if-branch" title="if path not taken" >I</span>if (!isPasswordValid) <span class="cstat-no" title="statement not covered" >throw invalidCredentialsError();</span></span>
+async function validatePasswordOrFail(password: string, userPassword: string) {
+  const isPasswordValid = await bcrypt.compare(password, userPassword);
+  if (!isPasswordValid) throw invalidCredentialsError();
 }
 &nbsp;
 export type SignInParams = Pick&lt;User, 'email' | 'password'&gt;;
@@ -250,7 +250,7 @@ export * from './errors';
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Wed Apr 26 2023 19:43:34 GMT-0300 (Horário Padrão de Brasília)
+                at Fri Apr 28 2023 19:45:33 GMT-0300 (Horário Padrão de Brasília)
             </div>
         <script src="../../../prettify.js"></script>
         <script>

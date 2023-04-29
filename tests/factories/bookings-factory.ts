@@ -4,6 +4,7 @@ import { generateValidToken } from '../helpers';
 import { createUser } from './users-factory';
 import { createEnrollmentWithAddress } from './enrollments-factory';
 import { createTicket, createTicketTypeWithHotel } from './tickets-factory';
+import { createPayment } from './payments-factory';
 import { prisma } from '@/config';
 
 export async function createBooking(userId: number, roomId: number) {
@@ -20,7 +21,8 @@ export async function createValidUser() {
   const token = await generateValidToken(user);
   const enrollment = await createEnrollmentWithAddress(user);
   const ticketType = await createTicketTypeWithHotel();
-  await createTicket(enrollment.id, ticketType.id, 'PAID');
+  const ticket = await createTicket(enrollment.id, ticketType.id, 'PAID');
+  await createPayment(ticket.id, ticketType.price);
 
   return { token, user, enrollment, ticketType };
 }

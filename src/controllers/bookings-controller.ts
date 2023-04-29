@@ -15,9 +15,10 @@ export async function getUserBooking(req: AuthenticatedRequest, res: Response) {
 export async function createBooking(req: AuthenticatedRequest, res: Response) {
   const { roomId } = req.body;
   try {
-    const promise = await bookingService.createBooking(req.userId, roomId);
-    return res.status(httpStatus.OK).send(promise.id);
+    const promise = await bookingService.createBooking(req.userId, Number(roomId));
+    return res.status(httpStatus.CREATED).send({ bookingId: promise.id });
   } catch (error) {
+    console.log(error);
     return res.status(httpStatus.FORBIDDEN).send(error);
   }
 }

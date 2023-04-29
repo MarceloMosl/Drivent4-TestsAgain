@@ -13,7 +13,7 @@ import {
   createTicketTypeWithHotel,
   createUser,
 } from '../factories';
-import { createBooking, createFullyBookedRoom, createValidUser, test } from '../factories/bookings-factory';
+import { createBooking, createFullyBookedRoom, createValidUser } from '../factories/bookings-factory';
 import app, { init } from '@/app';
 
 beforeAll(async () => {
@@ -154,13 +154,13 @@ describe('POST /boookings when token is valid', () => {
     expect(response.status).toEqual(httpStatus.FORBIDDEN);
   });
 
-  it('Should respond with 200 when body is valid', async () => {
+  it('Should respond with 201 when body is valid', async () => {
     const { token } = await createValidUser();
     const hotel = await createHotel();
     const room = await createRoomWithHotelId(hotel.id);
 
     const response = await server.post('/booking').set('Authorization', `Bearer ${token}`).send({ roomId: room.id });
 
-    expect(response.status).toEqual(httpStatus.OK);
+    expect(response.status).toEqual(httpStatus.CREATED);
   });
 });

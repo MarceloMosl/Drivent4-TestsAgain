@@ -13,7 +13,6 @@ export async function getUserBooking(userId: number) {
 export async function createBooking(userId: number, roomId: number): Promise<Booking> {
   const room = await bookingRepo.getRoomById(roomId);
   const roomBookings = await bookingRepo.getBookingsByRoomId(roomId);
-  console.log(roomBookings.length === room.capacity);
   if (room.capacity === roomBookings.length) throw conflictError('Room fully booked');
 
   return await bookingRepo.createBooking(userId, roomId);

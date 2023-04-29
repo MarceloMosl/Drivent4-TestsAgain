@@ -18,7 +18,9 @@ import {
   hotelsRouter,
   bookingRouter,
 } from '@/routers';
+// eslint-disable-next-line import/order
 import { generateValidToken } from '../tests/helpers';
+// eslint-disable-next-line import/order
 import { createUser } from '../tests/factories/users-factory';
 
 const app = express();

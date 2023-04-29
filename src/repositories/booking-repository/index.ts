@@ -22,7 +22,7 @@ export async function getRoomById(roomId: number) {
 }
 
 export async function createBooking(userId: number, roomId: number) {
-  return await prisma.booking.create({
+  return prisma.booking.create({
     data: {
       userId,
       roomId,

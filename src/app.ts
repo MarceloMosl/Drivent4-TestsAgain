@@ -18,12 +18,20 @@ import {
   hotelsRouter,
   bookingRouter,
 } from '@/routers';
+import { generateValidToken } from '../tests/helpers';
+import { createUser } from '../tests/factories/users-factory';
 
 const app = express();
 app
   .use(cors())
   .use(express.json())
-  .get('/health', (_req, res) => res.send('OK!'))
+  .get('/health', async (_req, res) => {
+    const user = await createUser();
+    const token = await generateValidToken(user);
+
+    console.log(token);
+    return res.send('OK!');
+  })
   .use('/users', usersRouter)
   .use('/auth', authenticationRouter)
   .use('/event', eventsRouter)

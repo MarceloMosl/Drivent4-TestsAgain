@@ -9,6 +9,26 @@ export async function getUserBooking(userId: number): Promise<unknown> {
     },
   });
 }
+export async function getBookingsByRoomId(roomId: number) {
+  return prisma.booking.findMany({
+    where: { roomId },
+  });
+}
 
-const bookingRepo = { getUserBooking };
+export async function getRoomById(roomId: number) {
+  return await prisma.room.findFirst({
+    where: { id: roomId },
+  });
+}
+
+export async function createBooking(userId: number, roomId: number) {
+  return await prisma.booking.create({
+    data: {
+      userId,
+      roomId,
+    },
+  });
+}
+
+const bookingRepo = { getUserBooking, getRoomById, getBookingsByRoomId, createBooking };
 export default bookingRepo;

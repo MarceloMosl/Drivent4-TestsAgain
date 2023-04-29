@@ -11,3 +11,13 @@ export async function getUserBooking(req: AuthenticatedRequest, res: Response) {
     return res.status(httpStatus.NOT_FOUND).send(error);
   }
 }
+
+export async function createBooking(req: AuthenticatedRequest, res: Response) {
+  const { roomId } = req.body;
+  try {
+    const promise = await bookingService.createBooking(req.userId, roomId);
+    return res.status(httpStatus.OK).send(promise.id);
+  } catch (error) {
+    return res.status(httpStatus.FORBIDDEN).send(error);
+  }
+}

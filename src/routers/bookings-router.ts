@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { authenticateToken, validadeBookingRequest, validateBody } from '@/middlewares';
-import { createBooking, getUserBooking } from '@/controllers/bookings-controller';
+import { createBooking, getUserBooking } from '@/controllers/booking-controller';
 import { createBookingSchema } from '@/schemas/bookings-schemas';
 
 const bookingRouter = Router();

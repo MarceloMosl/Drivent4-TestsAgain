@@ -21,3 +21,13 @@ export async function createBooking(req: AuthenticatedRequest, res: Response) {
     return res.status(httpStatus.FORBIDDEN).send(error);
   }
 }
+
+export async function updateBookingRoom(req: AuthenticatedRequest, res: Response) {
+  const { roomId } = req.params;
+  try {
+    const promise = await bookingService.updateBookingRoom(req.userId, Number(roomId));
+    return res.status(httpStatus.OK).send({ bookingId: promise.id });
+  } catch (error) {
+    return res.status(httpStatus.FORBIDDEN).send(error);
+  }
+}

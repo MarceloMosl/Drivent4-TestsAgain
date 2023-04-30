@@ -18,14 +18,12 @@ export async function createBooking(userId: number, roomId: number): Promise<Boo
   return await bookingRepo.createBooking(userId, roomId);
 }
 
-export async function updateBookingRoom(userId: number, roomId: number) {
+export async function updateBookingRoom(bookingId: number, roomId: number) {
   const room = await bookingRepo.getRoomById(roomId);
   const roomBookings = await bookingRepo.getBookingsByRoomId(roomId);
   if (room.capacity === roomBookings.length) throw conflictError('Room fully booked');
 
-  const { id } = await bookingRepo.getBookingsByUserId(userId);
-
-  return await bookingRepo.changeBookingRoom(roomId, id);
+  return await bookingRepo.changeBookingRoom(roomId, bookingId);
 }
 
 const bookingService = { getUserBooking, createBooking, updateBookingRoom };

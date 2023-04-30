@@ -23,9 +23,10 @@ export async function createBooking(req: AuthenticatedRequest, res: Response) {
 }
 
 export async function updateBookingRoom(req: AuthenticatedRequest, res: Response) {
-  const { roomId } = req.params;
+  const { bookingId } = req.params;
+  const { roomId } = req.body;
   try {
-    const promise = await bookingService.updateBookingRoom(req.userId, Number(roomId));
+    const promise = await bookingService.updateBookingRoom(Number(bookingId), roomId);
     return res.status(httpStatus.OK).send({ bookingId: promise.id });
   } catch (error) {
     return res.status(httpStatus.FORBIDDEN).send(error);
